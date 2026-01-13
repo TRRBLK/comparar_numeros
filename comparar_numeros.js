@@ -1,4 +1,4 @@
-let a = prompt("Ingresa un numero: ");
-let b = prompt("Ingresa otro numero: ");
-let c = prompt("Ingresa un tercer numero: ");
-
+let numeros = [Number(prompt("Ingresa un numero: ")),
+Number(prompt("Ingresa otro numero: ")),
+Number(prompt("Ingresa un tercer numero: "))
+];
