@@ -8,6 +8,19 @@ let indice = 0;
 let rompebucle = false;
 
 do {
-console.log(numeros[indice]);
-indice++;
-} while (indice<numeros.length-1);
+while (indice <numeros.length-1) {
+    if (numeros[indice] < numeros[indice+1]) {
+        
+        ente = numeros[indice];
+        numeros[indice] = numeros[indice+1];
+        numeros[indice+1] = ente;
+
+        rompebucle = true;
+
+    }
+console.log(numeros);
+    indice++;
+}
+} while (rompebucle);
+
+
