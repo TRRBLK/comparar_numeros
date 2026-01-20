@@ -8,6 +8,9 @@ let indice = 0;
 let rompebucle = false;
 
 do {
+
+    indice = 0;
+    rompebucle = false;
 while (indice <numeros.length-1) {
     if (numeros[indice] < numeros[indice+1]) {
         
@@ -18,9 +21,20 @@ while (indice <numeros.length-1) {
         rompebucle = true;
 
     }
-console.log(numeros);
-    indice++;
+   indice++;
 }
 } while (rompebucle);
+
+indice = 0;
+
+if (numeros[indice] === numeros[indice+1] && numeros[indice+1] === numeros[indice+2]) {
+    console.log(`${numeros[indice]} = ${numeros[indice+1]} = ${numeros[indice+2]}`)
+}
+
+else {
+    console.log(`El arreglo se ordenó del numero mayor al numero menor: ` + numeros);
+console.log(`El mismo arreglo en orden inverso: ` + numeros.reverse());
+}
+
 
 
