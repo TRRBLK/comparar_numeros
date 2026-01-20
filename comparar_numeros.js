@@ -28,7 +28,7 @@ while (indice <numeros.length-1) {
 indice = 0;
 
 if (numeros[indice] === numeros[indice+1] && numeros[indice+1] === numeros[indice+2]) {
-    console.log(`${numeros[indice]} = ${numeros[indice+1]} = ${numeros[indice+2]}`)
+    console.log(`${numeros[indice]} = ${numeros[indice+1]} = ${numeros[indice+2]} los numeros son iguales`)
 }
 
 else {
